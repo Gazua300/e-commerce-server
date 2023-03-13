@@ -15,7 +15,7 @@ const insertProducts = async(req, res)=>{
         }
 
 
-        await con('products').insert({
+        await con('products_Ecommerce').insert({
             id: uuid.v4(),
             name,
             price: Math.floor(Math.random() * 1000),
